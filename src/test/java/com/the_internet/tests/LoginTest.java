@@ -4,7 +4,6 @@ import com.the_internet.pages.HomePage;
 import com.the_internet.pages.LoginPage;
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class LoginTest extends TestBase {

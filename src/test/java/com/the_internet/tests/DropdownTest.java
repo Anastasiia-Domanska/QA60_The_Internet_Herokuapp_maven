@@ -11,6 +11,7 @@ public class DropdownTest extends TestBase {
         driver.get("https://the-internet.herokuapp.com/dropdown");
         DropdownPage dropdownPage = new DropdownPage(driver);
         dropdownPage.selectOptionByValue("2");
-        Assert.assertEquals(dropdownPage.getSelectedOptionText(), "Option 2", "Должен быть выбран Option 2");
+        Assert.assertEquals(dropdownPage.getSelectedOptionText(),
+                "Option 2", "Должен быть выбран Option 2");
     }
 }

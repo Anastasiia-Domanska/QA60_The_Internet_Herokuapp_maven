@@ -2,15 +2,24 @@ package com.the_internet.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends BasePage {
 
-    private By username = By.id("username");
-    private By password = By.id("password");
-    private By loginButton = By.cssSelector("button[type='submit']");
+    @FindBy(id = "username")
+    WebElement username;
+
+    @FindBy(id = "password")
+    WebElement password;
+
+    @FindBy(css = "button[type='submit']")
+    WebElement loginButton;
 
     public LoginPage(WebDriver driver) {
         super(driver);
+        PageFactory.initElements(driver, this);
     }
 
     public void login(String user, String pass) {
