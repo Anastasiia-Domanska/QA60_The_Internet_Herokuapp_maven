@@ -19,5 +19,13 @@ public class HomePage extends BasePage {
         click(formAuthLink);
         return new LoginPage(driver);
     }
+
+    @FindBy(xpath = "//a[.='Hovers']")
+    WebElement hovers;
+    public HoversPage selectHovers() {
+        click(hovers);
+        return new HoversPage(driver);
+
+    }
 }
 
