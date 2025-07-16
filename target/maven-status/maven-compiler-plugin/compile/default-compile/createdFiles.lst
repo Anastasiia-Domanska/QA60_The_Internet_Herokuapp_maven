@@ -1,0 +1,14 @@
+com\the_internet\pages\HomePage.class
+com\the_internet\pages\DragAndDropPage.class
+com\the_internet\pages\HorizontalSliderPage.class
+com\the_internet\config\ApplicationManager.class
+com\the_internet\pages\LoginPage.class
+com\the_internet\utils\MyListener.class
+com\the_internet\utils\DataProviders.class
+com\the_internet\pages\CheckboxesPage.class
+com\the_internet\pages\ContextMenuPage.class
+com\the_internet\pages\DropdownPage.class
+com\the_internet\pages\HoversPage.class
+com\the_internet\pages\AddRemovePage.class
+com\the_internet\pages\BasePage.class
+com\the_internet\pages\FileUploadPage.class

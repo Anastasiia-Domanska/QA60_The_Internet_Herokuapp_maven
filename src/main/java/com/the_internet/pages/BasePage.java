@@ -51,7 +51,11 @@ public class BasePage {
     }
 
     protected boolean isElementPresent(WebElement element) {
-        return !driver.findElements((By) element).isEmpty();
+        try {
+            return element.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
     }
 
     public boolean isElementDisplayed(WebElement element){

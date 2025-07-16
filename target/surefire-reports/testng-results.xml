@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-16T15:41:09 CEST" name="user" finished-at="2025-07-16T15:41:21 CEST" duration-ms="11707">
+    <groups>
+    </groups>
+    <test started-at="2025-07-16T15:41:09 CEST" name="user" finished-at="2025-07-16T15:41:21 CEST" duration-ms="11707">
+      <class name="com.the_internet.tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.the_internet.tests.LoginTest@1817d444]" started-at="2025-07-16T15:41:09 CEST" name="setUp" finished-at="2025-07-16T15:41:14 CEST" duration-ms="4811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidLogin()[pri:0, instance:com.the_internet.tests.LoginTest@1817d444]" started-at="2025-07-16T15:41:14 CEST" name="testValidLogin" finished-at="2025-07-16T15:41:16 CEST" duration-ms="1705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.the_internet.tests.LoginTest@1817d444]" started-at="2025-07-16T15:41:16 CEST" name="tearDown" finished-at="2025-07-16T15:41:16 CEST" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.the_internet.tests.LoginTest -->
+      <class name="com.the_internet.tests.HoversTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.the_internet.tests.HoversTest@6973b51b]" started-at="2025-07-16T15:41:16 CEST" name="setUp" finished-at="2025-07-16T15:41:20 CEST" duration-ms="3799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.the_internet.tests.HoversTest@6973b51b]" started-at="2025-07-16T15:41:20 CEST" name="precondition" finished-at="2025-07-16T15:41:20 CEST" duration-ms="444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="hoversTest()[pri:0, instance:com.the_internet.tests.HoversTest@6973b51b]" started-at="2025-07-16T15:41:20 CEST" name="hoversTest" finished-at="2025-07-16T15:41:21 CEST" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoversTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.the_internet.tests.HoversTest@6973b51b]" started-at="2025-07-16T15:41:21 CEST" name="tearDown" finished-at="2025-07-16T15:41:21 CEST" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.the_internet.tests.HoversTest -->
+    </test> <!-- user -->
+  </suite> <!-- user -->
+</testng-results>

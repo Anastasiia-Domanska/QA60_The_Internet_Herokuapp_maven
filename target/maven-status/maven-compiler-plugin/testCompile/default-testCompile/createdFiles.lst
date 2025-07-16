@@ -1,0 +1,10 @@
+com\the_internet\tests\AddRemoveTest.class
+com\the_internet\tests\TestBase.class
+com\the_internet\tests\ContextMenuTest.class
+com\the_internet\tests\DropdownTest.class
+com\the_internet\tests\DragAndDropTest.class
+com\the_internet\tests\LoginTest.class
+com\the_internet\tests\CheckboxesTest.class
+com\the_internet\tests\HorizontalSliderTest.class
+com\the_internet\tests\FileUploadTest.class
+com\the_internet\tests\HoversTest.class
