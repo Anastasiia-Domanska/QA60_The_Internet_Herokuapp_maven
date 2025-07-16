@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="user" verbose="1">
+    <test name="user">
+        <classes>
+            <class name="com.the_internet.tests.LoginTest"/>
+            <class name="com.the_internet.tests.AddRemoveTest"/>
+        </classes>
+    </test>
+</suite>

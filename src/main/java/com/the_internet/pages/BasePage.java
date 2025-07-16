@@ -1,9 +1,6 @@
 package com.the_internet.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -57,4 +54,13 @@ public class BasePage {
         return !driver.findElements((By) element).isEmpty();
     }
 
+    public boolean isElementDisplayed(WebElement element){
+        try {
+            element.isDisplayed();
+            return true;
+        }catch (NoSuchElementException exception){
+            exception.getMessage();
+            return false;
+        }
+    }
 }

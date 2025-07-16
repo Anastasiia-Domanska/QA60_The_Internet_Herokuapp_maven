@@ -28,5 +28,11 @@ public class HomePage extends BasePage {
 
     }
 
+    @FindBy(css = "a[href='/upload']")
+    WebElement fileUpload;
+    public HomePage clickFileUpload() {
+        click(fileUpload);
+        return this;
+    }
 }
 

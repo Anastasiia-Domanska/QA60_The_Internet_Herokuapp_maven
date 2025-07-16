@@ -1,25 +1,26 @@
 package com.the_internet.tests;
 
+import com.the_internet.config.ApplicationManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-import java.time.Duration;
-
 public class TestBase {
 
-    WebDriver driver;
+    protected static ApplicationManager app = new ApplicationManager(System.getProperty("browser", "chrome"));
+    protected WebDriver driver;
+    Logger logger = LoggerFactory.getLogger(TestBase.class);
 
     @BeforeMethod
-    public void init(){
-        driver = new ChromeDriver();
-        driver.get("https://the-internet.herokuapp.com");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    public void setUp() {
+        app.init();
+        driver = app.getDriver();
     }
-    @AfterMethod(enabled = false)
-    public void tearDown(){
-        driver.quit();
+
+    @AfterMethod
+    public void tearDown() {
+        app.stop();
     }
 }
